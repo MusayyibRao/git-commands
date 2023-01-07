@@ -1,0 +1,124 @@
+1. setup your Git username:
+    git config --global user.name "Musa"
+
+2. setup your Git user email:
+     git config --global user.email "musa12@gmail.com"
+
+3. cache your login credentials in git:
+     git config --global credential.helper cache
+
+4. initialize a Git repo:
+    git init
+
+5. add a file to the staging area
+    git add filename_here
+
+6. add all files in the staging area
+    git add .
+
+7.  add only certain files to the staging area
+     git add fil*
+
+8. check a repository's status
+    git status
+
+9. commit changes in the editor
+    git commit
+
+10. commit changes with a message
+     git commit -m "your commit message here"
+
+11. commit changes (and skip the staging area)
+     git commit -a -m"your commit message here"
+
+12. see your commit history
+    git log
+
+13. see your commit history including changes
+     git log -p
+
+14. see a specific commit
+     git show commit-id
+
+15. see log stats in Git:
+     git log --stat
+
+16. see changes made before committing them using "diff" in Git:
+     git diff
+     git diff --staged
+
+17. remove tracked files from the current working tree 
+     git rm filename
+
+18. rename files in Git:
+     git mv oldfile newfile
+
+19. revert unstaged changes
+     git checkout filename
+
+20. revert staged changes
+     git reset HEAD filename
+     git reset HEAD -p
+
+21. rollback the last commit
+     git revert HEAD
+
+22. rollback an old commit
+     git revert comit_id_here
+
+23. create a new branch in Git:
+     git branch branch_name
+
+24. switch to a newly created branch
+    git checkout branch_name
+
+25. list branches in Git:
+      git branch
+
+26. create a branch in Git and switch to it immediately:
+      git checkout -b branch_name
+
+27. delete a branch in Git:
+     git branch -d branch_name
+
+28.  merge two branches in Git:
+      git merge branch_name
+
+29.  show the commit log as a graph in Git:
+       git log --graph --oneline
+
+30. show the commit log as a graph of all branches in Git:
+      git log --graph --oneline --all
+
+31. abort a conflicting merge in Git:
+     git merge --abort
+
+32. add a remote repository in Git
+     git add remote https://repo_here
+
+33.  see remote URLs in Git:
+       git remote -v
+
+34. push changes to a remote repo
+     git push
+
+35. pull changes from a remote repo
+     git pull 
+
+36. check remote branches 
+     git branch -r
+
+37. check the current commits log of a remote repo
+     git log origin/main
+
+38. merge a remote repo with your local repo
+      git merge origin/main
+
+39. push a new branch to a remote repo
+     git push -u origin branch_name
+
+40. You can transfer completed work from one branch to another using git rebase.
+     git rebase branch_name_here
+
+
+
